@@ -6,7 +6,6 @@ const openai = new OpenAI({
 });
 
 const completion = await openai.chat.completions.create({
-
   model: "openai/gpt-4o-mini",
   messages: [
     {
@@ -15,7 +14,8 @@ const completion = await openai.chat.completions.create({
     },
     {
       role: "user",
-      content: "Розкажи жарт про програмістів",
+      content:
+        "Придумай опис технології майбутнього, яка дозволяє людям обмінюватися емоціями замість слів. Як вона працює, які проблеми вона може вирішити, а які виклики принесе?",
     },
   ],
   store: true,
